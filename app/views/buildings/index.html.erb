@@ -1,0 +1,10 @@
+<h1>All Buildings</h1>
+<% @buildings.each do |building| %>
+    <h2><%= link_to building.name, building %></h2>
+    <h3>Country: <%= building.country %></h3>
+    <p>Address: <%= building.address %></p>
+    <p>Rent: $<%= building.rent_per_floor %></p>
+    <% building.number_of_floors_available.each do |floor| %>
+        <p>Floor number <%= floor %> is available</p>
+    <% end%>
+<% end %>

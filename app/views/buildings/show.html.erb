@@ -1,0 +1,11 @@
+<h1><%= @building.name %></h1>
+<h3>Country: <%= @building.country %></h3>
+ <p>Address: <%= @building.address %></p>
+<p>Rent: $<%= @building.rent_per_floor %></p>
+
+<hr>
+<h2>We are making $<%= @building.total_rent  %> for rent</h2>
+
+<p> <%= link_to "Edit Page", edit_building_path %></p>
+<p> <%= link_to "All Buildings Page", buildings_path %></p>
+
